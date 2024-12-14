@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Biodata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* General Reset */
+    body, h1, h2, p, ul, li, nav, footer {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation Bar */
+    nav {
+      height: 80px;
+      width: 100%;
+      background-color: lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    nav h1 {
+      font-size: 24px;
+    }
+
+    /* Content Section */
+    .div {
+      max-width: 1200px;
+      margin: 10px auto;
+      padding: 20px;
+
+    }
+    .div p, .div h2 {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .div ul {
+      list-style: none;
+    }
+    .div ul li {
+      margin-bottom: 10px;
+    }
+    .div span {
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: blueviolet;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px; /* Ensures proper spacing between sections */
+    }
+    .foot div {
+      flex: 1 1 200px; /* Makes sections flexible and responsive */
+      min-width: 150px;
+    }
+    footer h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer ul li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .foot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px; /* Reduces the gap slightly for smaller screens */
+      }
+      footer h3 {
+        font-size: 16px;
+      }
+      footer ul li {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav h1 {
+        font-size: 18px;
+      }
+      .div {
+        padding: 10px;
+      }
+      footer h3 {
+        font-size: 14px;
+      }
+      footer ul li {
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+      .copyright {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Biodata</h1>
+  </nav>
+  <div class="div">
+    <p><span>Name:</span> Sharanayya</p>
+    <p><span>Email :</span> <a href="#">sharanayyahiremath76@gmail.com</a></p><br>
+    <h2>Education Details</h2>
+    <ul>
+      <h3>Bangalore Institute of Technology, Visvesvaraya Technological University (VTU), India</h3>
+      <li style="margin-left: 30px;"><p>Computer Science and Engineering [2022-2026]</p></li>
+      <h3>Kayaka F Trust Res PU College, Gulbarga, India</h3>
+      <li style="margin-left: 30px;"><p>Dept. of Pre-University Education (Class XII)</p></li>
+    </ul><br>
+    <h2>Personal Information</h2>
+    <p><span>Gender :</span> Male</p>
+    <p><span>Date of Birth:</span> 17 Oct 2004</p>
+    <p><span>Marital Status :</span> Unmarried</p>
+    <p><span>Nationality :</span> Indian</p>
+    <p><span>Languages Known:</span> English, Kannada, Hindi</p>
+    <p><span>Address:</span> Tarkaspet, Kalaburagi, India</p>
+  </div>
+  <footer>
+    <div class="foot">
+      <div class="foot1">
+        <h3>Contact Information</h3>
+        <ul>
+          <li>1234-567-345</li>
+          <a href="#"><li>sharanayyahiremath76@gmail.com</li></a>
+        </ul>
+      </div>
+      <div class="foot2">
+        <h3>Quick Links</h3>
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="resume.html"><li>Resume</li></a>
+          <a href="biodata.html"><li>Biodata</li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© 2024 Sharanayya Hiremath | Privacy Policy | Terms and Conditions</div>
+  </footer>
+</body>
+</html>
